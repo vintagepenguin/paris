@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @weekly_goal.name %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @weekly_goal.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @weekly_goal.end_date %>
+</p>
+
+<p>
+  <strong>Is achieved:</strong>
+  <%= @weekly_goal.is_achieved %>
+</p>
+
+<p>
+  <strong>Was adjusted:</strong>
+  <%= @weekly_goal.was_adjusted %>
+</p>
+
+<p>
+  <strong>On pace:</strong>
+  <%= @weekly_goal.on_pace %>
+</p>
+
+<p>
+  <strong>Long term goal:</strong>
+  <%= @weekly_goal.long_term_goal %>
+</p>
+
+<p>
+  <strong>Mid term goal:</strong>
+  <%= @weekly_goal.mid_term_goal %>
+</p>
+
+<p>
+  <strong>Is current goal:</strong>
+  <%= @weekly_goal.is_current_goal %>
+</p>
+
+<%= link_to 'Edit', edit_weekly_goal_path(@weekly_goal) %> |
+<%= link_to 'Back', weekly_goals_path %>
