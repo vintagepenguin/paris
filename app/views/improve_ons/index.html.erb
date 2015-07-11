@@ -1,0 +1,41 @@
+<h1>Listing improve_ons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Daily goal</th>
+      <th>Long term goal</th>
+      <th>Mid term goal</th>
+      <th>Weekly goal</th>
+      <th>Date of day</th>
+      <th>Time</th>
+      <th>Category</th>
+      <th>Used before</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @improve_ons.each do |improve_on| %>
+      <tr>
+        <td><%= improve_on.description %></td>
+        <td><%= improve_on.daily_goal %></td>
+        <td><%= improve_on.long_term_goal %></td>
+        <td><%= improve_on.mid_term_goal %></td>
+        <td><%= improve_on.weekly_goal %></td>
+        <td><%= improve_on.date_of_day %></td>
+        <td><%= improve_on.time %></td>
+        <td><%= improve_on.category %></td>
+        <td><%= improve_on.used_before %></td>
+        <td><%= link_to 'Show', improve_on %></td>
+        <td><%= link_to 'Edit', edit_improve_on_path(improve_on) %></td>
+        <td><%= link_to 'Destroy', improve_on, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Improve on', new_improve_on_path %>

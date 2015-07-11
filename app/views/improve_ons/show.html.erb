@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @improve_on.description %>
+</p>
+
+<p>
+  <strong>Daily goal:</strong>
+  <%= @improve_on.daily_goal %>
+</p>
+
+<p>
+  <strong>Long term goal:</strong>
+  <%= @improve_on.long_term_goal %>
+</p>
+
+<p>
+  <strong>Mid term goal:</strong>
+  <%= @improve_on.mid_term_goal %>
+</p>
+
+<p>
+  <strong>Weekly goal:</strong>
+  <%= @improve_on.weekly_goal %>
+</p>
+
+<p>
+  <strong>Date of day:</strong>
+  <%= @improve_on.date_of_day %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @improve_on.time %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @improve_on.category %>
+</p>
+
+<p>
+  <strong>Used before:</strong>
+  <%= @improve_on.used_before %>
+</p>
+
+<%= link_to 'Edit', edit_improve_on_path(@improve_on) %> |
+<%= link_to 'Back', improve_ons_path %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :improve_ons
+
   resources :strengths
 
   resources :focus_points
