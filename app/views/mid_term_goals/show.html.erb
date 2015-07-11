@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mid_term_goal.name %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @mid_term_goal.end_date %>
+</p>
+
+<p>
+  <strong>Is achieved:</strong>
+  <%= @mid_term_goal.is_achieved %>
+</p>
+
+<p>
+  <strong>Was adjusted:</strong>
+  <%= @mid_term_goal.was_adjusted %>
+</p>
+
+<p>
+  <strong>On pace:</strong>
+  <%= @mid_term_goal.on_pace %>
+</p>
+
+<p>
+  <strong>Long term goal:</strong>
+  <%= @mid_term_goal.long_term_goal %>
+</p>
+
+<p>
+  <strong>Is current goal:</strong>
+  <%= @mid_term_goal.is_current_goal %>
+</p>
+
+<%= link_to 'Edit', edit_mid_term_goal_path(@mid_term_goal) %> |
+<%= link_to 'Back', mid_term_goals_path %>

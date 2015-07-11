@@ -1,0 +1,45 @@
+<%= form_for(@mid_term_goal) do |f| %>
+  <% if @mid_term_goal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mid_term_goal.errors.count, "error") %> prohibited this mid_term_goal from being saved:</h2>
+
+      <ul>
+      <% @mid_term_goal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.datetime_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :is_achieved %><br>
+    <%= f.check_box :is_achieved %>
+  </div>
+  <div class="field">
+    <%= f.label :was_adjusted %><br>
+    <%= f.check_box :was_adjusted %>
+  </div>
+  <div class="field">
+    <%= f.label :on_pace %><br>
+    <%= f.check_box :on_pace %>
+  </div>
+  <div class="field">
+    <%= f.label :long_term_goal_id %><br>
+    <%= f.text_field :long_term_goal_id %>
+  </div>
+  <div class="field">
+    <%= f.label :is_current_goal %><br>
+    <%= f.check_box :is_current_goal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
