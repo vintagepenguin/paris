@@ -1,7 +1,8 @@
 class CreateMidTermGoals < ActiveRecord::Migration
   def change
     create_table :mid_term_goals do |t|
-      t.stringstart_date :name
+      t.string   :name
+      t.datetime :start_date
       t.datetime :end_date
       t.boolean :is_achieved
       t.boolean :was_adjusted
