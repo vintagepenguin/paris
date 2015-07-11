@@ -1,0 +1,41 @@
+<h1>Listing focus_points</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Daily goal</th>
+      <th>Long term goal</th>
+      <th>Mid term goal</th>
+      <th>Weekly goal</th>
+      <th>Date of day</th>
+      <th>Time</th>
+      <th>Category</th>
+      <th>Used before</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @focus_points.each do |focus_point| %>
+      <tr>
+        <td><%= focus_point.description %></td>
+        <td><%= focus_point.daily_goal %></td>
+        <td><%= focus_point.long_term_goal %></td>
+        <td><%= focus_point.mid_term_goal %></td>
+        <td><%= focus_point.weekly_goal %></td>
+        <td><%= focus_point.date_of_day %></td>
+        <td><%= focus_point.time %></td>
+        <td><%= focus_point.category %></td>
+        <td><%= focus_point.used_before %></td>
+        <td><%= link_to 'Show', focus_point %></td>
+        <td><%= link_to 'Edit', edit_focus_point_path(focus_point) %></td>
+        <td><%= link_to 'Destroy', focus_point, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Focus point', new_focus_point_path %>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @focus_point.description %>
+</p>
+
+<p>
+  <strong>Daily goal:</strong>
+  <%= @focus_point.daily_goal %>
+</p>
+
+<p>
+  <strong>Long term goal:</strong>
+  <%= @focus_point.long_term_goal %>
+</p>
+
+<p>
+  <strong>Mid term goal:</strong>
+  <%= @focus_point.mid_term_goal %>
+</p>
+
+<p>
+  <strong>Weekly goal:</strong>
+  <%= @focus_point.weekly_goal %>
+</p>
+
+<p>
+  <strong>Date of day:</strong>
+  <%= @focus_point.date_of_day %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @focus_point.time %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @focus_point.category %>
+</p>
+
+<p>
+  <strong>Used before:</strong>
+  <%= @focus_point.used_before %>
+</p>
+
+<%= link_to 'Edit', edit_focus_point_path(@focus_point) %> |
+<%= link_to 'Back', focus_points_path %>
