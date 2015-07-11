@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @strength.description %>
+</p>
+
+<p>
+  <strong>Daily goal:</strong>
+  <%= @strength.daily_goal %>
+</p>
+
+<p>
+  <strong>Long term goal:</strong>
+  <%= @strength.long_term_goal %>
+</p>
+
+<p>
+  <strong>Mid term goal:</strong>
+  <%= @strength.mid_term_goal %>
+</p>
+
+<p>
+  <strong>Weekly goal:</strong>
+  <%= @strength.weekly_goal %>
+</p>
+
+<p>
+  <strong>Date of day:</strong>
+  <%= @strength.date_of_day %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @strength.time %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @strength.category %>
+</p>
+
+<p>
+  <strong>Used before:</strong>
+  <%= @strength.used_before %>
+</p>
+
+<%= link_to 'Edit', edit_strength_path(@strength) %> |
+<%= link_to 'Back', strengths_path %>
