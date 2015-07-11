@@ -1,0 +1,49 @@
+<%= form_for(@daily_goal) do |f| %>
+  <% if @daily_goal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@daily_goal.errors.count, "error") %> prohibited this daily_goal from being saved:</h2>
+
+      <ul>
+      <% @daily_goal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :task %><br>
+    <%= f.text_field :task %>
+  </div>
+  <div class="field">
+    <%= f.label :long_term_goal_id %><br>
+    <%= f.text_field :long_term_goal_id %>
+  </div>
+  <div class="field">
+    <%= f.label :mid_term_goal_id %><br>
+    <%= f.text_field :mid_term_goal_id %>
+  </div>
+  <div class="field">
+    <%= f.label :weekly_goal_id %><br>
+    <%= f.text_field :weekly_goal_id %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_day %><br>
+    <%= f.date_select :date_of_day %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.text_field :time %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br>
+    <%= f.text_field :category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :is_current_goal %><br>
+    <%= f.check_box :is_current_goal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

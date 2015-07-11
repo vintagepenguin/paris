@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :daily_goals
+
   resources :weekly_goals
 
   resources :mid_term_goals

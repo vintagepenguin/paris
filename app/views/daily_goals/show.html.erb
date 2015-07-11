@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @daily_goal.task %>
+</p>
+
+<p>
+  <strong>Long term goal:</strong>
+  <%= @daily_goal.long_term_goal %>
+</p>
+
+<p>
+  <strong>Mid term goal:</strong>
+  <%= @daily_goal.mid_term_goal %>
+</p>
+
+<p>
+  <strong>Weekly goal:</strong>
+  <%= @daily_goal.weekly_goal %>
+</p>
+
+<p>
+  <strong>Date of day:</strong>
+  <%= @daily_goal.date_of_day %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @daily_goal.time %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @daily_goal.category %>
+</p>
+
+<p>
+  <strong>Is current goal:</strong>
+  <%= @daily_goal.is_current_goal %>
+</p>
+
+<%= link_to 'Edit', edit_daily_goal_path(@daily_goal) %> |
+<%= link_to 'Back', daily_goals_path %>
