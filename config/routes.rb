@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :long_term_goals
+
   resources :categories
 
   # The priority is based upon order of creation: first created -> highest priority.

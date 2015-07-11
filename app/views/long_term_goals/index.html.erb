@@ -1,0 +1,37 @@
+<h1>Listing long_term_goals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Is achieved</th>
+      <th>Was adjusted</th>
+      <th>On pace</th>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @long_term_goals.each do |long_term_goal| %>
+      <tr>
+        <td><%= long_term_goal.name %></td>
+        <td><%= long_term_goal.start_date %></td>
+        <td><%= long_term_goal.end_date %></td>
+        <td><%= long_term_goal.is_achieved %></td>
+        <td><%= long_term_goal.was_adjusted %></td>
+        <td><%= long_term_goal.on_pace %></td>
+        <td><%= long_term_goal.category %></td>
+        <td><%= link_to 'Show', long_term_goal %></td>
+        <td><%= link_to 'Edit', edit_long_term_goal_path(long_term_goal) %></td>
+        <td><%= link_to 'Destroy', long_term_goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Long term goal', new_long_term_goal_path %>
